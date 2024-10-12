@@ -1,10 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-
+import TopBarNagivationComponent from './Nagivation/TopBarNagivationComponent';
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
+import NavigationPage from './Nagivation/NavigationPage';
 function App() {
   return (
 <>
-<h1>This Front end part brnach</h1>
+<BrowserRouter>
+<Routes>
+<Route path='/' element={<NavigationPage/>}></Route>
+</Routes>
+</BrowserRouter>
 </>    
 
   );
